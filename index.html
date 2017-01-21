@@ -1,0 +1,11 @@
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
+    <script src = "module.js"></script>
+    <script src = "message-controller-as.js"></script>
+</head>
+<body ng-app = "app">
+    <p ng-controller="MessageController as controller">
+        {{controller.message}}
+    </p>
+
+</body>
