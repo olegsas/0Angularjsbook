@@ -3,10 +3,14 @@
     <script src = "module.js"></script>
     <script src = "message-controller-scope.js"></script>
     <script src = "count-controller.js"></script>
+    <script src = "addition-controller.js"></script>
 </head>
 <body ng-app = "app">
-    <p ng-controller="CountController">
-        There are {{count()}} months in a year.
+    <p ng-controller="AdditionController">
+        <select ng-model = "operand1" ng-options = "x for x in options"></select>
+        +
+        <select ng-model = "operand2" ng-options = "x for x in options"></select>
+        = {{add()}}
     </p>
 
 </body>
